@@ -3,6 +3,6 @@
 <div [ngSwitch]="contentSelection">
   <app-report *ngSwitchCase="'Report'"></app-report>
   <app-team *ngSwitchCase="'Team'"></app-team>
-  <app-about *ngSwitchCaseDefault></app-about>
+  <app-about *ngSwitchCase="'Vision'"></app-about>
 </div>
 <app-footer></app-footer>

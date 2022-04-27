@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-export type page = 'Report' | 'About' | 'Team';
+export type page = 'Report' | 'Vision' | 'Team';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,7 @@ export type page = 'Report' | 'About' | 'Team';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  contentMap = {
-    Report: 'report.html',
-    About: 'about.html',
-    Team: 'team.html',
-  };
-
-  contentSelection: page = 'About';
+  contentSelection: page = 'Vision';
 
   nav($event: page) {
     this.contentSelection = $event;
